@@ -1,0 +1,117 @@
+/* ANIMATION */
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 20px;}
+}
+
+
+body {
+    background-color: rgb(194, 62, 139);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.circle {
+    border-radius: 30em;
+    background-color: #4644444d;    
+    transform: rotate(17deg) skew(110deg);
+    padding: 5rem;
+    margin-top: -60em;
+}
+
+.container {
+    height: 150vh;
+    display: grid;
+    place-items: center;
+    width: 25em;
+}
+
+.envelopeWrapper {
+    position: relative;
+    background-color: hwb(332 36% 3%);
+    transform: rotate(-30deg);
+    animation: mymove 2.5s infinite alternate;
+}
+
+.heart {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    font-size: 2em;
+    z-index: 3;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+.container .letter {
+    position: relative;
+    bottom: 0;
+    transition: bottom 3s ease;
+    border: 7px dotted rgb(255, 0, 170) ;
+    padding: 10px;
+    margin: 2em;
+    background-color: white;
+    font-family: "Qwitcher Grypen";
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+
+.envelopeClose1::before {
+    content: '';
+    transition: transform 0.5s ease-in-out;
+    transform-origin: top;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    border-top: 10em solid hwb(332 47% 2%);
+    border-right: 200px solid transparent;
+    border-left: 200px solid transparent;
+    transition: 0.8s ease-in-out;
+}
+
+.envelopeClose2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-left: 13em solid hwb(332 54% 0%);
+    border-top: 10em solid transparent;
+    border-bottom: 9.3em solid transparent;
+}
+
+.envelopeClose3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    border-right: 13em solid hwb(332 54% 0%);
+    border-top: 10em solid transparent;
+    border-bottom: 9.3em solid transparent;
+}
+
+.envelopeWrapper::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    border-bottom: 10em solid hwb(332 60% 0%);
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+}
+
+.flap .envelopeClose1::before {
+    transform: rotateX(180deg);
+    z-index: 0;
+    transition: transform 0.8s ease-in-out;
+}
+
+.flap .heart {
+    transform: translate(50%, -20%) rotate(45deg);
+}   
+
+.flap .letter {
+    bottom: 200px;
+}
