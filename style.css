@@ -77,8 +77,8 @@ body {
     left: 0;
     z-index: 1;
     border-left: 13em solid hwb(332 54% 0%);
-    border-top: 10em solid transparent;
-    border-bottom: 9.3em solid transparent;
+    border-top: 9.8em solid transparent;
+    border-bottom: 10.2em solid transparent;
 }
 
 .envelopeClose3::before {
@@ -88,8 +88,8 @@ body {
     right: 0;
     z-index: 1;
     border-right: 13em solid hwb(332 54% 0%);
-    border-top: 10em solid transparent;
-    border-bottom: 9.3em solid transparent;
+    border-top: 9.8em solid transparent;
+    border-bottom: 10.2em solid transparent;
 }
 
 .envelopeWrapper::before {
@@ -97,7 +97,7 @@ body {
     position: absolute;
     bottom: 0;
     z-index: 2;
-    border-bottom: 10em solid hwb(332 60% 0%);
+    border-bottom: 12em solid hwb(332 60% 0%);
     border-left: 200px solid transparent;
     border-right: 200px solid transparent;
 }
@@ -118,11 +118,12 @@ body {
 
 @media only screen and (max-width: 600px) {
 .flap .letter {
-    bottom: 100px;
+    bottom: 115px;
 }
 
 .container {
-    width: 15em;
+    width: 12em;
+    margin-left: 30px;
 }
 
 .container .letter {
@@ -133,26 +134,26 @@ body {
 
 .envelopeClose1::before {
     border-top: 5em solid hwb(332 47% 2%);
-    border-right: 120px solid transparent;
-    border-left: 120px solid transparent;
+    border-right: 95px solid transparent;
+    border-left: 95px solid transparent;
 }
 
 .envelopeClose2::before {
     border-left: 11em solid hwb(332 54% 0%);
     border-top: 4em solid transparent;
-    border-bottom: 4.5em solid transparent;
+    border-bottom: 5.8em solid transparent;
 }
 
 .envelopeClose3::before {
     border-right: 11em solid hwb(332 54% 0%);
     border-top: 4em solid transparent;
-    border-bottom: 4.5em solid transparent;
+    border-bottom: 5.8em solid transparent;
 }
 
 .envelopeWrapper::before {
     border-bottom: 6em solid hwb(332 60% 0%);
-    border-left: 120px solid transparent;
-    border-right: 120px solid transparent;
+    border-left: 95px solid transparent;
+    border-right: 95px solid transparent;
 }
 
 .circle {
@@ -162,7 +163,7 @@ body {
 
 .heart {
     font-size: 1.3em;
-    left: 5em;
+    left: 4em;
     top: 1.8em;
 }
 }
