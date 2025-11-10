@@ -1,2 +1,2 @@
 # good-luck-letter
-A letter for her.
+A letter for you.
